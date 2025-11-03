@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Donation Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+        color: #000;
+        display: flex;
+        justify-content: center;   /* Center form horizontally */
+        align-items: flex-start;   /* Keep form near top */
+        min-height: 100vh;
+    }
+
+    form {
+        width: 700px;
+        border: 1px solid #ccc;
+        padding: 15px 30px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+
+    /* Section titles */
+    h2 {
+        background-color: #e0e0e0;
+        padding: 5px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        color: red;              /* 🔴 Make title text red */
+    }
+
+    label {
+        display: inline-block;
+        width: 140px;
+        vertical-align: top;
+        margin-top: 6px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 250px;
+        padding: 4px;
+        border: 1px solid #999;
+        border-radius: 3px;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    textarea {
+        width: 400px;
+        height: 60px;
+        resize: none;
+    }
+
+    .section {
+        margin-bottom: 20px;
+    }
+
+    .note {
+        font-size: 12px;
+        color: #555;
+    }
+
+    .buttons {
+        margin-top: 15px;
+        text-align: center; /* center the buttons */
+    }
+
+    button {
+        background-color: #ddd;
+        border: 1px solid #999;
+        padding: 4px 12px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    button:hover {
+        background-color: #ccc;
+    }
+
+    .footer-note {
+        font-size: 12px;
+        margin-top: 20px;
+        color: #333;
+        text-align: center;
+    }
+
+</style>
+</head>
+<body>
+
+<form>
+    <div class="section">
+        <h2>Donor Information</h2>
+        <label>First Name*:</label> <input type="text"><br>
+        <label>Last Name*:</label> <input type="text"><br>
+        <label>Company:</label> <input type="text"><br>
+        <label>Address 1*:</label> <input type="text"><br>
+        <label>Address 2:</label> <input type="text"><br>
+        <label>City*:</label> <input type="text"><br>
+        <label>State:</label> 
+        <select>
+            <option>Select a State</option>
+        </select><br>
+        <label>Zip Code*:</label> <input type="text"><br>
+        <label>Country*:</label> 
+        <select>
+            <option>Select a Country</option>
+        </select><br>
+        <label>Phone:</label> <input type="text"><br>
+        <label>Fax:</label> <input type="text"><br>
+        <label>Email*:</label> <input type="email"><br>
+
+        <label>Donation Amount*:</label>
+        <input type="radio" name="amt">None
+        <input type="radio" name="amt">$50
+        <input type="radio" name="amt">$75
+        <input type="radio" name="amt">$100
+        <input type="radio" name="amt">$250
+        <input type="radio" name="amt">Other
+        <label>Other Amount $</label><input type="text" style="width:80px;"><br>
+
+        <label>Recurring Donation:</label>
+        <input type="checkbox">I am interested in giving on a regular basis.<br>
+        <label></label>Monthly Credit Card $
+        <input type="text" style="width:60px;"> For 
+        <input type="text" style="width:40px;"> Months
+    </div>
+
+    <div class="section">
+        <h2>Honorarium and Memorial Donation Information</h2>
+        <label>I would like to make this donation:</label>
+        <input type="radio" name="honor">To Honor
+        <input type="radio" name="honor">In Memory of<br>
+        <label>Name:</label> <input type="text"><br>
+        <label>Acknowledge Donation to:</label> <input type="text"><br>
+        <label>Address:</label> <input type="text"><br>
+        <label>City:</label> <input type="text"><br>
+        <label>State:</label>
+        <select><option>Select a State</option></select><br>
+        <label>Zip:</label> <input type="text">
+    </div>
+
+    <div class="section">
+        <h2>Additional Information</h2>
+        <p class="note">Please enter your name, company or organization as you would like it to appear in our publications:</p>
+        <label></label><input type="text" style="width:400px;"><br>
+        <input type="checkbox">I would like my gift to remain anonymous.<br>
+        <input type="checkbox">My employer offers a matching gift program. I will mail the matching gift form.<br>
+        <input type="checkbox">Please save the cost of acknowledging this gift by not mailing a thank you letter.<br>
+
+        <label>Comments:</label><br>
+        <textarea></textarea><br>
+
+        <label>How may we contact you?</label><br>
+        <input type="checkbox">E-mail
+        <input type="checkbox">Postal Mail
+        <input type="checkbox">Telephone
+        <input type="checkbox">Fax<br>
+
+        <label>I would like to receive newsletters and information about special events by:</label><br>
+        <input type="checkbox">E-mail
+        <input type="checkbox">Postal Mail<br>
+
+        <input type="checkbox">I would like information about volunteering with the organization.
+    </div>
+
+    <div class="buttons">
+        <button type="reset">Reset</button>
+        <button type="submit">Continue</button>
+    </div>
+
+    <p class="footer-note">
+        <b>Donate online with confidence.</b> You are on a secure server.<br><br>
+        If you have any problems or questions, please contact support.
+    </p>
+</form>
+
+</body>
+</html>
