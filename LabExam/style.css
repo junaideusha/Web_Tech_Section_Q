@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.article-box {
+  width: 70%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section {
+  margin-top: 25px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+  margin: 5px 0 10px 0;
+}
+
+.stats {
+  padding: 10px;
+  background: #eef3ff;
+  border: 1px solid #c6d6ff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #283593;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #1a237e;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+.comment-box {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.stars span {
+  font-size: 28px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.stars .selected {
+  color: gold;
+}
+
+.rating-display {
+  color: orange;
+  font-size: 16px;
+}

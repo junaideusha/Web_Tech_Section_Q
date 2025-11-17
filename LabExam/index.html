@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Two Articles with Separate Comment Sections</title>
+
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ARTICLE 1 -->
+<div class="article-box">
+
+<!-- EDIT ARTICLE 1 BELOW -->
+<h1>Article 1: The Future of Digital Media in a Hyper-Connected World</h1>
+<p>
+  The landscape of digital media is undergoing a massive transformation as new
+  technologies redefine the way people consume information. With the rise of 
+  high-speed internet, 5G networks, artificial intelligence, and personalized 
+  content delivery systems, online news platforms are shifting from traditional 
+  reporting models to dynamic, user-driven experiences.
+</p>
+
+<p>
+  Modern readers expect instant access to breaking news, interactive visual 
+  storytelling, multimedia features, and reliable fact-checking in real time. 
+  Media companies are increasingly using AI to analyze user behavior, recommend 
+  relevant articles, detect misinformation, and enhance the overall engagement 
+  experience. The future of digital media is not only about delivering content 
+  quickly—it is about delivering the right content to the right audience at the 
+  right moment.
+</p>
+
+<p>
+  As global audiences grow, media platforms must balance speed with accuracy, 
+  personalization with privacy, and automation with human editorial judgment. 
+  The next decade will mark a shift toward hybrid newsrooms where journalists, 
+  data scientists, and machine learning systems collaborate to shape the future 
+  of storytelling.
+</p>
+<!-- END ARTICLE 1 -->
+
+
+
+  <!-- COMMENT SECTION 1 -->
+  <div class="comment-section">
+
+    <h2>Comments (Article 1)</h2>
+
+    <div class="stats">
+      <strong>Total Comments:</strong> <span id="totalComments1">0</span> <br>
+      <strong>Average Rating:</strong> <span id="avgRating1">0</span> ⭐
+    </div>
+
+    <form id="commentForm1">
+      <label>Name *</label>
+      <input type="text" id="name1">
+      <div class="error" id="nameError1"></div>
+
+      <label>Email (optional)</label>
+      <input type="text" id="email1">
+
+      <label>Comment *</label>
+      <textarea id="comment1"></textarea>
+      <div class="error" id="commentError1"></div>
+
+      <label>Rate This Article</label>
+      <div class="stars" id="stars1">
+        <span data-star="1">★</span>
+        <span data-star="2">★</span>
+        <span data-star="3">★</span>
+        <span data-star="4">★</span>
+        <span data-star="5">★</span>
+      </div>
+      <input type="hidden" id="rating1" value="0">
+
+      <button type="submit">Submit Comment</button>
+    </form>
+
+    <hr>
+    <div id="commentsList1"></div>
+
+  </div>
+</div>
+
+<!-- ARTICLE 2 -->
+<div class="article-box">
+
+  <!--ARTICLE 2 BELOW -->
+<h1>Article 2: How Artificial Intelligence is Reshaping Healthcare</h1>
+
+<p>
+  Artificial Intelligence (AI) is rapidly becoming one of the most powerful 
+  tools in modern healthcare. From early disease detection to clinical decision 
+  support, AI-powered models are allowing hospitals and researchers to uncover 
+  patterns that were previously invisible to human observation.
+</p>
+
+<p>
+  Machine learning algorithms can now analyze medical scans, identify anomalies, 
+  and assist doctors in diagnosing critical conditions such as cancer, heart 
+  disease, and neurological disorders. AI-enabled predictive analytics are also 
+  helping healthcare providers anticipate patient needs, reduce hospital 
+  readmissions, and optimize treatment plans.
+</p>
+
+<p>
+  Beyond diagnostics, AI is improving drug discovery, robotic surgeries, virtual 
+  patient assistants, and mental health support systems. However, as healthcare 
+  becomes increasingly digital, challenges surrounding privacy, data 
+  security, and algorithmic fairness must be carefully managed.
+</p>
+
+<p>
+  With the right balance of innovation and ethical governance, AI has the 
+  potential to completely transform healthcare, making it more efficient, 
+  personalized, and accessible for millions of people worldwide.
+</p>
+<!-- END ARTICLE 2 -->
+
+
+  <!-- COMMENT SECTION 2 -->
+  <div class="comment-section">
+
+    <h2>Comments (Article 2)</h2>
+
+    <div class="stats">
+      <strong>Total Comments:</strong> <span id="totalComments2">0</span> <br>
+      <strong>Average Rating:</strong> <span id="avgRating2">0</span> ⭐
+    </div>
+
+    <form id="commentForm2">
+      <label>Name *</label>
+      <input type="text" id="name2">
+      <div class="error" id="nameError2"></div>
+
+      <label>Email (optional)</label>
+      <input type="text" id="email2">
+
+      <label>Comment *</label>
+      <textarea id="comment2"></textarea>
+      <div class="error" id="commentError2"></div>
+
+      <label>Rate This Article</label>
+      <div class="stars" id="stars2">
+        <span data-star="1">★</span>
+        <span data-star="2">★</span>
+        <span data-star="3">★</span>
+        <span data-star="4">★</span>
+        <span data-star="5">★</span>
+      </div>
+      <input type="hidden" id="rating2" value="0">
+
+      <button type="submit">Submit Comment</button>
+    </form>
+
+    <hr>
+    <div id="commentsList2"></div>
+
+  </div>
+</div>
+
+<!-- LINK JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
